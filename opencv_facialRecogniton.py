@@ -1,16 +1,16 @@
 import cv2
 import numpy as np
 
-# multiple cascades: https://github.com/Itseez/opencv/tree/master/data/haarcascades
+#multiple cascades: https://github.com/Itseez/opencv/tree/master/data/haarcascades
 #https://github.com/Itseez/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
 face_cascade_path = "C:/Users/five/Desktop/openVC_examples/haarcascade_frontalface_default.xml"
-#face_cascade_path = "haarcascade_frontalface_default.xml"
+#face_cascade_path = "haarcascade_frontalface_default.xml"                                              #error not working
 
-#face_cascade = cv2.CascadeClassifier(face_cascade_path)
+#face_cascade = cv2.CascadeClassifier(face_cascade_path)                                                #error not working
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 
 #https://github.com/Itseez/opencv/blob/master/data/haarcascades/haarcascade_eye.xml
-#eye_cascade = cv2.CascadeClassifier("C:\\Users\\five\\Desktop\\openVC_examples\\haarcascade_eye.xml") #error
+#eye_cascade = cv2.CascadeClassifier("C:\\Users\\five\\Desktop\\openVC_examples\\haarcascade_eye.xml")  #error not working
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye.xml")
 
 cap = cv2.VideoCapture(0)
